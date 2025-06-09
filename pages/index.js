@@ -6,15 +6,24 @@ import BenefitCard from '../components/BenefitCard';
 import Accordion from '../components/Accordion';
 
 export default function Home() {
-  const CTA = "https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais";
+  const CTA =
+    "https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia";
   return (
     <>
       <Header />
       <HeroSection
+asetge-codex/alterar-layout-da-herosection-para-dois-blocos
+        title="Medicina Quântica Segura Com Tecnologia de Ponta"
+        subtitle="Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente."
+        buttonLink={CTA}
+        buttonText="Entenda os Benefícios"
+        image="https://quantecportal.com/wp-content/uploads/2025/03/foto-angelo.webp"
+        imageAlt="Foto de Angelo"
         title="Título do Produto"
         subtitle="Subtítulo explicativo que convida o visitante"
         buttonLink={CTA}
         image="/ilustracao.png"
+main
       />
       <Section title="Terapia Quântica: Como Funciona" cols={2}>{/*...*/}</Section>
       <Section title="Benefícios da Energia Quântica" gray cols={3}>{/*...*/}</Section>
