@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import Hero from '../components/Hero';
+import HeroSection from '../components/HeroSection';
 import Section from '../components/Section';
 import WaButton from '../components/WaButton';
 import BenefitCard from '../components/BenefitCard';
@@ -10,7 +10,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
+      <HeroSection
+        title="Título do Produto"
+        subtitle="Subtítulo explicativo que convida o visitante"
+        buttonLink={CTA}
+        image="/ilustracao.png"
+      />
       <Section title="Terapia Quântica: Como Funciona" cols={2}>{/*...*/}</Section>
       <Section title="Benefícios da Energia Quântica" gray cols={3}>{/*...*/}</Section>
       <Section title="Perguntas Frequentes (FAQ)" gray><Accordion items={[]} /></Section>
